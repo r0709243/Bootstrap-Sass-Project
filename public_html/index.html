@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>1ITF Sass BS4 project</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Sass - Bootstrap 4
+            <small class="text-muted">project 1ITF</small>
+        </h1>
+        <hr class="mb-4">
+    </header>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, aliquid corporis deserunt eos
+                exercitationem explicabo id molestiae nemo perspiciatis quasi ut vero voluptatibus?
+                Ducimus enim
+                expedita
+                reprehenderit sit veritatis.
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="alert alert-primary">
+                This is a primary alert
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-danger">
+                This is a danger alert
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="alert alert-success">
+                This is a success alert
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <button type="button" class="btn btn-primary btn-block" data-toggle="tooltip" data-placement="top"
+                    title="Tooltip on top"><i class="fas fa-home"></i> Home
+            </button>
+            <button type="button" class="btn btn-danger btn-block"><i class="fas fa-users"></i> Users</button>
+            <button type="button" class="btn btn-outline-success btn-block" data-toggle="modal"
+                    data-target="#imageModal"><i
+                    class="fas fa-image"></i> Image modal
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Random image</h5>
+            </div>
+            <div class="modal-body">
+                <img src="https://placeimg.com/600/337/nature" class="img-fluid" alt="Random image">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--custom scripts-->
+</body>
+</html>
