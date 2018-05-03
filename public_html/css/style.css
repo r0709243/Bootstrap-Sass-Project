@@ -67,7 +67,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: lightblue;
 }
 
 [tabindex="-1"]:focus {
@@ -487,7 +487,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: lightblue;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1693,7 +1693,7 @@ pre code {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: lightblue;
 }
 
 .table-sm th,
@@ -1866,7 +1866,7 @@ pre code {
 }
 
 .table .thead-dark th {
-  color: #fff;
+  color: lightblue;
   background-color: #212529;
   border-color: #32383e;
 }
@@ -1878,7 +1878,7 @@ pre code {
 }
 
 .table-dark {
-  color: #fff;
+  color: lightblue;
   background-color: #212529;
 }
 
@@ -2268,8 +2268,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  -webkit-box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+          box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
@@ -2368,8 +2368,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(240, 76, 37, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(240, 76, 37, 0.25);
+  -webkit-box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(240, 76, 37, 0.25);
+          box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(240, 76, 37, 0.25);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
@@ -3731,8 +3731,8 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+  -webkit-box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+          box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
 }
 
 .custom-control-input:active ~ .custom-control-label::before {
@@ -3976,8 +3976,8 @@ input[type="button"].btn-block {
 
 .custom-range::-webkit-slider-thumb:focus {
   outline: none;
-  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
-          box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+  -webkit-box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+          box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
 }
 
 .custom-range::-webkit-slider-thumb:active {
@@ -4006,7 +4006,7 @@ input[type="button"].btn-block {
 
 .custom-range::-moz-range-thumb:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+  box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
 }
 
 .custom-range::-moz-range-thumb:active {
@@ -4034,7 +4034,7 @@ input[type="button"].btn-block {
 
 .custom-range::-ms-thumb:focus {
   outline: none;
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
+  box-shadow: 0 0 0 1px lightblue, 0 0 0 0.2rem rgba(0, 156, 171, 0.25);
 }
 
 .custom-range::-ms-thumb:active {
@@ -4113,8 +4113,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: lightblue;
+  border-color: #dee2e6 #dee2e6 lightblue;
 }
 
 .nav-tabs .dropdown-menu {

@@ -4,7 +4,8 @@ $theme-colors: (
         'danger': #F04C25
 );
 
-// Link to BS4
-@import "../node_modules/bootstrap/scss/bootstrap";
+$body-bg: lightblue; //body-bg staat ook in variables.scss met !default -> om deze waarde te overschrijven moet deze ervóór gedefinieerd worden
 
-// Custom code/partials
+// variabelen aanpassen ervoor
+@import "../node_modules/bootstrap/scss/bootstrap";
+//eigen scss code erna
