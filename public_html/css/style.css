@@ -9590,4 +9590,72 @@ section h3.section-subheading {
   }
 }
 
+/* Footer */
+.footer {
+  background-color: #292c2f;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  margin-top: 80px;
+  /*Footer links*/
+  /* Footer linken */
+  /* Footer rechts */
+}
+
+.footer .footer-links a {
+  font-size: 20px;
+  margin: 0;
+}
+
+.footer p.footer-linken {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer p.footer-linken a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .footer-rechts {
+  float: right;
+  max-width: 180px;
+}
+
+.footer .footer-rechts a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  text-align: right;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+/* Responsieve footer */
+@media (max-width: 600px) {
+  .footer .footer-links,
+  .footer .footer-rechts {
+    text-align: center;
+  }
+  .footer .footer-rechts {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer .footer-links p.footer-linken {
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+}
+
 /*# sourceMappingURL=maps/style.css.map */
