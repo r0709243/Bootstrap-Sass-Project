@@ -9598,63 +9598,65 @@ section h3.section-subheading {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
   margin-top: 80px;
   /*Footer links*/
   /* Footer linken */
   /* Footer rechts */
 }
 
+.footer .footer-links {
+  width: 100%;
+}
+
 .footer .footer-links a {
   font-size: 20px;
-  margin: 0;
 }
 
-.footer p.footer-linken {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 10px;
-  padding: 0;
+.footer .footer-center {
+  width: 100%;
+  font-size: 20px;
 }
 
-.footer p.footer-linken a {
-  display: inline-block;
+.footer .footer-center a {
   line-height: 1.8;
   text-decoration: none;
-  color: inherit;
+  color: white;
+  padding: 5px;
 }
 
 .footer .footer-rechts {
-  float: right;
-  max-width: 180px;
+  width: 100%;
 }
 
 .footer .footer-rechts a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
   font-size: 20px;
-  text-align: right;
   line-height: 35px;
-  margin-left: 3px;
 }
 
 /* Responsieve footer */
-@media (max-width: 600px) {
-  .footer .footer-links,
-  .footer .footer-rechts {
-    text-align: center;
+@media screen and (max-width: 750px) {
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .footer .footer-rechts {
-    float: none;
-    margin: 0 auto 20px;
+  .footer-left, .footer-center, .footer-right {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .footer .footer-links p.footer-linken {
-    line-height: 1.8;
-    margin-bottom: 10px;
+  .footer-left a, .footer-center a, .footer-right a {
+    font-size: 18px;
   }
 }
 
