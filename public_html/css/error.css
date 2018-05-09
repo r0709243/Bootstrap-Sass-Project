@@ -1,0 +1,13 @@
+body {
+  background-image: url(../img/404.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.container {
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=maps/error.css.map */
