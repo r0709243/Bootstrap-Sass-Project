@@ -1,0 +1,18 @@
+body {
+  background-image: url(../img/404.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+.container {
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.knop {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=../maps/error/404.css.map */
