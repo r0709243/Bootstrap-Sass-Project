@@ -9455,10 +9455,10 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -9541,6 +9541,21 @@ section h3.section-subheading {
   .footer-left a, .footer-center a, .footer-right a {
     font-size: 18px;
   }
+}
+
+/* Tooltip */
+.tooltip-link {
+  color: #0C89C2;
+}
+
+/* Gemaakt door..*/
+.gemaakt-door {
+  padding: 0px;
+}
+
+/* Section heading h2 */
+section h2.section-heading {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=maps/geschiedenis.css.map */

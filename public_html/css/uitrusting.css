@@ -9455,10 +9455,10 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   text-transform: none;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

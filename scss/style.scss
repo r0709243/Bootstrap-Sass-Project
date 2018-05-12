@@ -3,6 +3,7 @@ $secondary: #e0fbfc;
 $light: #fcfcfc;
 $dark: #3d5a80;
 $button: #0facf3;
+$tooltip-kleur: #0C89C2;
 
 $link-color: $button;
 $navbar-light-color: black;
@@ -30,6 +31,7 @@ body {
     padding-top: 56px;
   }
 }
+
 
 p {
   line-height: 1.75;
@@ -60,7 +62,7 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 400;
   margin-top: 50px;
   margin-bottom: 30px;
