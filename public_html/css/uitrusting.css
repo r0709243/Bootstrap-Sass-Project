@@ -9543,4 +9543,23 @@ section h3.section-subheading {
   }
 }
 
+/* Tooltip */
+.tooltip-link {
+  color: #0C89C2;
+}
+
+/* Gemaakt door..*/
+.gemaakt-door {
+  padding: 0px;
+}
+
+/* Section heading h2 */
+section h2.section-heading {
+  margin-bottom: 50px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
 /*# sourceMappingURL=maps/uitrusting.css.map */
