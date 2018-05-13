@@ -9503,7 +9503,7 @@ section h3.section-subheading {
 }
 
 .footer .footer-links {
-  width: 100%;
+  width: 20%;
 }
 
 .footer .footer-links a {
@@ -9511,7 +9511,7 @@ section h3.section-subheading {
 }
 
 .footer .footer-center {
-  width: 100%;
+  width: 60%;
   font-size: 20px;
 }
 
@@ -9522,7 +9522,7 @@ section h3.section-subheading {
 }
 
 .footer .footer-rechts {
-  width: 100%;
+  width: 20%;
 }
 
 .footer .footer-rechts a {
@@ -9534,11 +9534,12 @@ section h3.section-subheading {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .footer-left, .footer-center, .footer-right {
+  .footer-links, .footer-center, .footer-rechts {
+    width: 100% !important;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .footer-left a, .footer-center a, .footer-right a {
+  .footer-links a, .footer-center a, .footer-rechts a {
     font-size: 18px;
   }
 }

@@ -111,14 +111,14 @@ section h3.section-subheading {
   padding: 30px;
 
   .footer-links {
-    width: 100%;
+    width: 20%;
     a{
       font-size: 20px;
     }
   }
 
   .footer-center {
-    width: 100%;
+    width: 60%;
     font-size:20px;
     a {
       text-decoration: none;
@@ -128,7 +128,7 @@ section h3.section-subheading {
   }
 
   .footer-rechts{
-    width: 100%;
+    width: 20%;
     a{
       font-size: 20px;
     }
@@ -140,7 +140,8 @@ section h3.section-subheading {
   .footer {
     flex-wrap: wrap;
   }
-  .footer-left, .footer-center, .footer-right {
+  .footer-links, .footer-center, .footer-rechts {
+    width: 100% !important;
     margin-top: 20px;
     margin-bottom: 20px;
     a {
