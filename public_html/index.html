@@ -111,8 +111,8 @@
             </div>
             <div class="col-sm-12 col-md-6">
                 <figure class="figure">
-                    <img src="img/inleiding/jagersindesneeuw.jpg" class="img-fluid rounded mx-auto d-block" alt="Schaatsende en sleeënde bewoners">
-                    <figcaption class="figure-caption"><span class="font-italic">Jagers in de sneeuw</span> van Pieter Bruegel de Oudere</figcaption>
+                    <img id="afbeelding" src="img/inleiding/jagersindesneeuw.jpg" class="img-fluid rounded mx-auto d-block" alt="Schaatsende en sleeënde bewoners">
+                  <figcaption class="figure-caption"><span class="font-italic">Jagers in de sneeuw</span> van Pieter Bruegel de Oudere</figcaption>
                 </figure>
             </div>
         </div>
@@ -143,5 +143,17 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/scroll.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $("#afbeelding").mouseout(function(){
+            $(".figure-caption").hide();
+        });
+        $("#afbeelding").mouseover(function(){
+            $(".figure-caption").show();
+        });
+    });
+</script>
 </body>
 </html>
