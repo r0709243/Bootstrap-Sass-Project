@@ -1,3 +1,6 @@
+/* Importeer fontstack */
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans");
+/* Font Variabelen */
 /* Bootstrap */
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
@@ -9422,7 +9425,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   padding-top: 54px;
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -9441,7 +9444,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Dosis", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -9449,7 +9452,7 @@ section {
 }
 
 section h2.section-heading {
-  font-size: 40px;
+  font-size: 45px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -9460,7 +9463,7 @@ section h3.section-subheading {
   margin-top: 50px;
   margin-bottom: 30px;
   text-transform: none;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Dosis", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Navbar */
@@ -9489,7 +9492,7 @@ section h3.section-subheading {
 .footer {
   width: 100%;
   text-align: center;
-  font: normal 16px sans-serif;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
