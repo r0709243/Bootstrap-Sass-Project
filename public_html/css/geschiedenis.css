@@ -9466,6 +9466,10 @@ section h3.section-subheading {
   font-family: "Dosis", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.vet {
+  font-weight: bold;
+}
+
 /* Navbar */
 .navbar-light .navbar-brand {
   color: black;
