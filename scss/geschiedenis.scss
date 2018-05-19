@@ -1,16 +1,25 @@
 @import "style";
 
 
-/* Mixin aanmaken voor alle transition vendors */
+/* Mixin */
+
+@mixin transform() {
+  .tekstvak:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+}
+
 /*
 @mixin transition($property, $duration, $timing-function) {
 
   -webkit-transition: $property, $duration, $timing-function;
   -moz-transition: $property, $duration, $timing-function;
-  -ms-transition: $property, $duration, $timing-function;
   transition: $property, $duration, $timing-function;
 }
-@include transition(all 0.6s ease-in-out);
+@include transition(all, 0.6s, ease-in-out);
 */
 
 /* Tooltip */
@@ -21,7 +30,7 @@
 
 /* Gemaakt door..*/
 .gemaakt-door {
-  padding: 0px;
+  padding: 0;
 }
 
 /* Section heading h2 */
@@ -29,34 +38,44 @@ section h2.section-heading {
   margin-bottom: 50px;
 }
 
-/* Maak tekstvak op foto groter */
+/* Maak tekstvak op foto groter en box-shadow met betere performantie */
 .tekstvak {
-  border-radius: 5px;
+
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
 
-.tekstvak::after {
-  content: "";
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+  /*Mag nog weg als dit niet gefixt wordt*/
+  /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
 
-.tekstvak:hover {
-  -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
+  -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  -moz-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
 
-.tekstvak:hover::after {
-  opacity: 1;
+  /* Maak het verborgen pseudo-element aan en voeg de schaduw toe*/
+  &:after {
+    content: "";
+    position: absolute;
+
+    /* 'Zet' het pseudo-element achter het tekstvak*/
+    z-index: -1;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+
+    /*Mag nog weg als dit niet gefixt wordt*/
+    /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
+
+    -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+    -moz-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+    transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  }
+
+  /* Vergroot het tekstvak*/
+  &:hover{
+    @include transform();
+    /*Laat het pseudo-element met de grotere schaduw langzaam opkomen */
+    &:after{
+      opacity: 1;
+    }
+  }
+
 }

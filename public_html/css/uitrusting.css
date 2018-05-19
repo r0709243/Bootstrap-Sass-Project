@@ -9583,4 +9583,43 @@ ul li {
   margin-bottom: 5px;
 }
 
+/* Maak tekstvak op foto groter en box-shadow met betere performantie */
+.tekstvak {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  /*Mag nog weg als dit niet gefixt wordt*/
+  /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
+  -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  /* Maak het verborgen pseudo-element aan en voeg de schaduw toe*/
+  /* Vergroot het tekstvak*/
+}
+
+.tekstvak:after {
+  content: "";
+  position: absolute;
+  /* 'Zet' het pseudo-element achter het tekstvak*/
+  z-index: -1;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  /*Mag nog weg als dit niet gefixt wordt*/
+  /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
+  -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+}
+
+.tekstvak:hover {
+  /*Laat het pseudo-element met de grotere schaduw langzaam opkomen */
+}
+
+.tekstvak:hover .carousel-caption:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.tekstvak:hover:after {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=maps/uitrusting.css.map */

@@ -24,6 +24,7 @@ $open-sans: 'Open Sans', sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 /* Mixin */
+
 @mixin transform() {
   .carousel-caption:hover {
     transform: scale(1.2,1.2);
@@ -92,6 +93,7 @@ section h3.section-subheading {
 .vet {
   font-weight: bold;
 }
+
 
 @include transform();
 @include transition(20px);
