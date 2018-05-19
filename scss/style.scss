@@ -22,7 +22,26 @@ $open-sans: 'Open Sans', sans-serif;
 
 /* Bootstrap */
 @import "../node_modules/bootstrap/scss/bootstrap";
+<<<<<<< 1fbc8e268d127ca63866e843c962c08c63063a9f
 @import "mixins.scss";
+=======
+
+/* Mixin */
+
+@mixin transform() {
+  .carousel-caption:hover {
+    transform: scale(1.2,1.2);
+  }
+}
+
+@mixin transition($size) {
+  a.link:hover {
+    font-size: $size !important;
+    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
+  }
+}
+>>>>>>> verbeteren van css3 transform en transition op eigen pagina's
 
 /* General */
 body {
@@ -79,7 +98,11 @@ section h3.section-subheading {
   font-weight: bold;
 }
 
+<<<<<<< 1fbc8e268d127ca63866e843c962c08c63063a9f
 /* Mixins */
+=======
+
+>>>>>>> verbeteren van css3 transform en transition op eigen pagina's
 @include transform();
 @include transition(20px);
 @include animation(200px, 0px);

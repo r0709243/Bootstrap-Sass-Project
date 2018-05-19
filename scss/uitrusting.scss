@@ -19,3 +19,45 @@ section h2.section-heading {
 ul li {
   margin-bottom: 5px;
 }
+
+/* Maak tekstvak op foto groter en box-shadow met betere performantie */
+.tekstvak {
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  /*Mag nog weg als dit niet gefixt wordt*/
+  /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
+
+  -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  -moz-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+
+  /* Maak het verborgen pseudo-element aan en voeg de schaduw toe*/
+  &:after {
+    content: "";
+    position: absolute;
+
+    /* 'Zet' het pseudo-element achter het tekstvak*/
+    z-index: -1;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+
+    /*Mag nog weg als dit niet gefixt wordt*/
+    /*@include transition(all, 0.6s, cubic-bezier(0.165, 0.84, 0.44, 1))*/
+
+    -webkit-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+    -moz-transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+    transition: all 0.6s cubic-bezier(0.08, 0.57, 0.55, 1.01);
+  }
+
+  /* Vergroot het tekstvak*/
+  &:hover{
+    @include transform();
+    /*Laat het pseudo-element met de grotere schaduw langzaam opkomen */
+    &:after{
+      opacity: 1;
+    }
+  }
+
+}
