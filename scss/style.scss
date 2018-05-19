@@ -24,9 +24,17 @@ $open-sans: 'Open Sans', sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 /* Mixin */
-@mixin animatie() {
+@mixin transform() {
   .carousel-caption:hover {
     transform: scale(1.2,1.2);
+  }
+}
+
+@mixin transition($size) {
+  a.link:hover {
+    font-size: $size !important;
+    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
   }
 }
 
@@ -85,7 +93,8 @@ section h3.section-subheading {
   font-weight: bold;
 }
 
-@include animatie();
+@include transform();
+@include transition(20px);
 
 
 /* Navbar */
