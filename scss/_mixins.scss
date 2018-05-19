@@ -1,0 +1,28 @@
+@mixin transform() {
+  .carousel-caption:hover {
+    transform: scale(1.2,1.2);
+  }
+}
+
+@mixin transition($size) {
+  a.link:hover {
+    font-size: $size !important;
+    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
+  }
+}
+
+@mixin animation($van, $naar) {
+  .section-subheading {
+    -webkit-animation: 1s slide;
+    animation: 1s slide;
+  }
+  @-webkit-keyframes slide {
+    from {margin-left: $van;}
+    to {margin-left: $naar;}
+  }
+  @keyframes slide {
+    from {margin-left: $van;}
+    to {margin-left: $naar;}
+  }
+}
