@@ -9421,7 +9421,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-/* Mixin */
 /* General */
 body {
   padding-top: 54px;
@@ -9471,6 +9470,7 @@ section h3.section-subheading {
   font-weight: bold;
 }
 
+/* Mixins */
 .carousel-caption:hover {
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
@@ -9481,6 +9481,29 @@ a.link:hover {
   -webkit-transition: font-size 2s;
   /* For Safari 3.1 to 6.0 */
   transition: font-size 2s;
+}
+
+.section-subheading {
+  -webkit-animation: 1s slide;
+  animation: 1s slide;
+}
+
+@-webkit-keyframes slide {
+  from {
+    margin-left: 200px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+@keyframes slide {
+  from {
+    margin-left: 200px;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
 
 /* Navbar */
