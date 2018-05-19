@@ -23,7 +23,12 @@ $open-sans: 'Open Sans', sans-serif;
 /* Bootstrap */
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
+/* Mixin */
+@mixin animatie() {
+  .carousel-caption:hover {
+    transform: scale(1.2,1.2);
+  }
+}
 
 /* General */
 body {
@@ -79,6 +84,8 @@ section h3.section-subheading {
 .vet {
   font-weight: bold;
 }
+
+@include animatie();
 
 
 /* Navbar */

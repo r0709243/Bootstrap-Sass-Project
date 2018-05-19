@@ -9421,6 +9421,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/* Mixin */
 /* General */
 body {
   padding-top: 54px;
@@ -9468,6 +9469,11 @@ section h3.section-subheading {
 
 .vet {
   font-weight: bold;
+}
+
+.carousel-caption:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
 }
 
 /* Navbar */
