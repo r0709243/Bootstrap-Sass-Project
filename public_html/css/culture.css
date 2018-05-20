@@ -15,6 +15,14 @@ blockquote.twitter-tweet {
   max-width: 468px;
 }
 
+#subtitel {
+  /* IE 9 */
+  -webkit-transform: rotate(-20deg);
+  /* Safari */
+  transform: rotate(-20deg);
+  /* Standard syntax */
+}
+
 blockquote.twitter-tweet p {
   font-size: 16px;
   font-weight: normal;
