@@ -9588,4 +9588,15 @@ a.link:hover {
   }
 }
 
+/* Gameplay en Scoring */
+#meer, #minder {
+  width: 100%;
+  text-align: center;
+}
+
+#meer a, #minder a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
