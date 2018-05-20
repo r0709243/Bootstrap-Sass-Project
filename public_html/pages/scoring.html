@@ -131,5 +131,38 @@
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/scroll.js"></script>
+<script>
+    $(function () {
+        //hide on load
+        $('#content-after').hide();
+        $('#minder').hide();
+
+        //lees meer clickevent
+        $('#meer > a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                $('#content-after').show('slow');
+                $('#meer').hide('slow');
+                $('#minder').show('slow');
+
+                //gentle scroll naar content-after
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top
+                }, 800);
+            }
+        });
+
+        //lees minder click event
+        $('#minder > a[href^="#"]').on('click', function (event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                $('#content-after').hide('slow');
+                $('#meer').show('slow');
+                $('#minder').hide('slow');
+            }
+        });
+    });
+</script>
 </body>
 </html>
