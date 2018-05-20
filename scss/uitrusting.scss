@@ -61,3 +61,38 @@ ul li {
   }
 
 }
+
+/*div voor traversing-knoppen*/
+.traversing {
+  background-color: $secondary;
+  border-radius: 15px;
+  border-bottom: 0 none;
+  -webkit-box-shadow: 0 1px 5px $dark;
+  -moz-box-shadow: 0 1px 5px $dark;
+  box-shadow: 0 1px 5px $dark;
+}
+
+.selecteerEerste {
+  margin-bottom: 10px;
+}
+
+.selecteerTweedeEnLaatste {
+  margin-bottom: 10px;
+}
+
+.deselecteerAlles {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 776px) {
+  .traversing {
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.markeer {
+  background-color: $secondary;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}

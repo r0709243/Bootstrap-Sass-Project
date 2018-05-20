@@ -12,12 +12,15 @@
 
 /* keyframes voor safari versie 4 - 8*/
 @-webkit-keyframes vergrootTekst {
+  /*zet de opaciteit op 0 als de animatie begint*/
+  /*en geef een scale3d als transform mee*/
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
+  /*zet de opaciteit op 1 als de animatie 50% voltooid is*/
   50% {
     opacity: 1;
   }
@@ -25,12 +28,15 @@
 
 /* standaard keyframes */
 @keyframes vergrootTekst {
+  /*zet de opaciteit op 0 als de animatie begint*/
+  /*en geef een scale3d als transform mee*/
   from {
     opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
 
+  /*zet de opaciteit op 1 als de animatie 50% voltooid is*/
   50% {
     opacity: 1;
   }
@@ -41,4 +47,6 @@
 .vergrootTekst {
   -webkit-animation-name: vergrootTekst;
   animation-name: vergrootTekst;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
