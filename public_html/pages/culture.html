@@ -139,6 +139,8 @@
 
     <div class="footer-rechts">
         <a href="http://www.woutcollart.sinners.be/bootstrap/" target="_blank">Team</a>
+        <p>Huidige datum </p>
+        <input type="text" id="datum">
     </div>
 </footer>
 
@@ -155,6 +157,16 @@
         $("#curlingstickfoto").mouseover(function(){
             $("#curlingstick").show();
         });
+        var now = new Date();
+
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+        var today = (day)+"-"+(month)+"-"+ now.getFullYear() ;
+
+
+        $('#datum').val(today);
+
     });
 </script>
 

@@ -126,11 +126,23 @@
 
     <div class="footer-rechts">
         <a href="http://www.woutcollart.sinners.be/bootstrap/" target="_blank">Team</a>
+        <p>U hebt deze site bezocht om </p>
+        <input type="text" id="datum">
     </div>
 </footer>
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/scroll.js"></script>
+<script>
+
+    $(document).ready(function(){
+        var dt = new Date();
+        var tijd = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+        $('#datum').val(tijd);
+
+    });
+</script>
+
 </body>
 </html>
