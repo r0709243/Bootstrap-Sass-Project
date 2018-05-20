@@ -1,0 +1,98 @@
+div #p {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 72px;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 20px;
+  float: left;
+  opacity: 0.0;
+  animation: port 3s 1 forwards;
+  -webkit-animation: port 3s 1 forwards;
+}
+
+div #p:nth-of-type(2) {
+  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+}
+
+div #p:nth-of-type(3) {
+  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+
+div #p:nth-of-type(4) {
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+
+div #p:nth-of-type(5) {
+  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+
+div #p:nth-of-type(6) {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+div #p:nth-of-type(7) {
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+
+div #p:nth-of-type(8) {
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+}
+
+div #p:nth-of-type(9) {
+  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+
+div:hover #p {
+  animation: reset 1s 1;
+  -webkit-animation: reset 1s 1;
+}
+
+@keyframes port {
+  0% {
+    -webkit-transform: rotateY(90deg) translateY(25%);
+            transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0%);
+            transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@-webkit-keyframes port {
+  0% {
+    -webkit-transform: rotateY(90deg) translateY(25%);
+    opacity: 0.0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0%);
+    opacity: 1.0;
+  }
+}
+
+@keyframes reset {
+  0% {
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes reset {
+  0% {
+  }
+  100% {
+  }
+}
+
+/*# sourceMappingURL=maps/strategie.css.map */
