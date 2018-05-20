@@ -1,0 +1,42 @@
+/*geef een element de standaard stijl voor animatie*/
+.animatie {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* Vergroot tekst animatie*/
+/* keyframes: welke stijl heeft het element op bepaalde momenten*/
+/* keyframes voor safari versie 4 - 8*/
+@-webkit-keyframes vergrootTekst {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* standaard keyframes */
+@keyframes vergrootTekst {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Vergroot tekst voor 1 seconde*/
+/* gebruik van id om bootstrap jumbotron te overschrijven*/
+.vergrootTekst {
+  -webkit-animation-name: vergrootTekst;
+  animation-name: vergrootTekst;
+}
+
+/*# sourceMappingURL=maps/animatie.css.map */

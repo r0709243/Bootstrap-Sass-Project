@@ -9421,6 +9421,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/* Mixin */
 /* General */
 body {
   padding-top: 54px;
@@ -9649,6 +9650,39 @@ section h2.section-heading {
 
 .tekstvak:hover:after {
   opacity: 1;
+}
+
+/* Vergroot tekst animatie*/
+/* keyframes: welke stijl heeft het element op bepaalde momenten*/
+/* keyframes voor safari versie 4 - 8*/
+@-webkit-keyframes vergrootTekst {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* standaard keyframes */
+@keyframes vergrootTekst {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Vergroot tekst voor 1 seconde*/
+/* gebruik van id om bootstrap jumbotron te overschrijven*/
+.vergrootTekst {
+  -webkit-animation: vergrootTekst 1s 1 both;
+  animation: vergrootTekst 1s 1 both;
 }
 
 /*# sourceMappingURL=maps/geschiedenis.css.map */
