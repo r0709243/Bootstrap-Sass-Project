@@ -15,7 +15,15 @@ blockquote.twitter-tweet {
   max-width: 468px;
 }
 
+.twitter-tweet:hover {
+  width: 500px;
+  height: 300px;
+}
 
+#tekstafbeelding {
+  -webkit-transform: translate(25px);
+          transform: translate(25px);
+}
 
 #subtitel {
   /* IE 9 */

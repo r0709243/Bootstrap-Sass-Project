@@ -9666,15 +9666,16 @@ ul li {
   box-shadow: 0 1px 5px #3d5a80;
 }
 
-.selecteerEerste {
+/* Knoppen traversing */
+.markeerEerste {
   margin-bottom: 10px;
 }
 
-.selecteerTweedeEnLaatste {
+.markeerTweedeEnLaatste {
   margin-bottom: 10px;
 }
 
-.deselecteerAlles {
+.demarkeerAlles {
   margin-bottom: 10px;
 }
 
