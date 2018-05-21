@@ -1,4 +1,4 @@
 Options All -Indexes
 
-ErrorDocument 404 /error/404.html
-ErrorDocument 403 /error/403.html
+ErrorDocument 403 /howtocurl/error/403.html
+ErrorDocument 404 /howtocurl/error/404.html
