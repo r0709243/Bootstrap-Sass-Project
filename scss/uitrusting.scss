@@ -70,19 +70,19 @@ ul li {
   -webkit-box-shadow: 0 1px 5px $dark;
   -moz-box-shadow: 0 1px 5px $dark;
   box-shadow: 0 1px 5px $dark;
-}
 
-/* Knoppen traversing */
-.markeerEerste {
-  margin-bottom: 10px;
-}
+  /* Knoppen traversing */
+  .markeerEerste {
+    margin-bottom: 10px;
+  }
 
-.markeerTweedeEnLaatste {
-  margin-bottom: 10px;
-}
+  .markeerTweedeEnLaatste {
+    margin-bottom: 10px;
+  }
 
-.demarkeerAlles {
-  margin-bottom: 10px;
+  .demarkeerAlles {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 776px) {

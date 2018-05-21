@@ -9664,18 +9664,18 @@ ul li {
   border-bottom: 0 none;
   -webkit-box-shadow: 0 1px 5px #3d5a80;
   box-shadow: 0 1px 5px #3d5a80;
+  /* Knoppen traversing */
 }
 
-/* Knoppen traversing */
-.markeerEerste {
+.traversing .markeerEerste {
   margin-bottom: 10px;
 }
 
-.markeerTweedeEnLaatste {
+.traversing .markeerTweedeEnLaatste {
   margin-bottom: 10px;
 }
 
-.demarkeerAlles {
+.traversing .demarkeerAlles {
   margin-bottom: 10px;
 }
 
