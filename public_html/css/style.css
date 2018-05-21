@@ -9529,6 +9529,11 @@ a.link:hover {
   border-radius: 10px;
 }
 
+/* Gemaakt door..*/
+.gemaakt-door {
+  padding: 0;
+}
+
 /* Footer */
 .footer {
   width: 100%;
